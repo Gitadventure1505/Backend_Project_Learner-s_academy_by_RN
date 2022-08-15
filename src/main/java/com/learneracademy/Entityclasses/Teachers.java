@@ -33,6 +33,17 @@ public class Teachers
 	
 	
 	
+	
+	
+	public Teachers() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
+
 	public Teachers(String t_id, String t_name, String t_loc) {
 		super();
 		T_id = t_id;

@@ -35,6 +35,17 @@ import javax.persistence.JoinColumn;
 		
 		@OneToOne(mappedBy = "sub_obj")
 		Classes cls_obj;
+		
+		
+		
+
+		public Subjects() {
+			super();
+			// TODO Auto-generated constructor stub
+		}
+
+
+
 
 		public Subjects(String sub_id, String sub_name, String diff) 
 		{

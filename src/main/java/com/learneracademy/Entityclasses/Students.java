@@ -9,6 +9,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+
 @Entity
 @Table(name = "Students")
 public class Students 
@@ -28,6 +29,7 @@ public class Students
 	
 	
 	@ManyToOne
+
 	@JoinColumn(name = "Class", referencedColumnName = "Class_Name")
 	Classes cls_stu_obj;
 	
@@ -39,6 +41,66 @@ public class Students
 		S_name = s_name;
 		S_loc = s_loc;
 	}
+	
+
+
+
+	public Students() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
+
+	public int getS_id() {
+		return S_id;
+	}
+
+
+
+	public void setS_id(int s_id) {
+		S_id = s_id;
+	}
+
+
+
+	public String getS_name() {
+		return S_name;
+	}
+
+
+
+	public void setS_name(String s_name) {
+		S_name = s_name;
+	}
+
+
+
+	public String getS_loc() {
+		return S_loc;
+	}
+
+
+
+	public void setS_loc(String s_loc) {
+		S_loc = s_loc;
+	}
+
+
+
+	public Classes getCls_stu_obj() {
+		return cls_stu_obj;
+	}
+
+
+
+	public void setCls_stu_obj(Classes cls_stu_obj) {
+		this.cls_stu_obj = cls_stu_obj;
+	}
+	
+	
 
 
 	
